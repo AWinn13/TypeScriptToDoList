@@ -1,0 +1,81 @@
+.input{
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+}
+
+.inputBox{
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black
+}
+
+.inputBox:focus{
+    box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.201);
+    outline: none;
+}
+
+.inputSubmit{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0px;
+    border: none;
+    font-size: 15px;
+    color: aliceblue;
+    background-color: darkmagenta;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+.inputSubmit:hover{
+    background-color: rgb(189, 3, 189);
+}
+.inputSubmit:active{
+    transform: scale(0.8);
+    box-shadow: 0 0 5px black;
+}
+
+.singleTodo{
+    display: flex;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px black;
+    background-color: coral;
+}
+.singleTodoText{
+    flex: 1;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.singleTodoText:focus {
+    outline: none;
+}
+
+.icon{
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+@media (max-width:700px){
+    .input{
+        width: 95%;
+    }
+    .todos{
+        width: 95%;
+    }
+    .singleTodo{
+        width: 100%;
+    }
+    
+}
